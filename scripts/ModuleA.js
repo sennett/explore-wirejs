@@ -5,7 +5,7 @@ define(function () {
 
 	ModuleA.prototype = {
 		doSomethingModuleA: function(){
-			alert(this.randomInjectable);
+			console.log(this.randomInjectable + " from module a");
 		}
 	};
 
