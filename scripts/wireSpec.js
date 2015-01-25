@@ -1,11 +1,12 @@
 define({
-	randomRuntimeInjectable: "some message yo",
+	randomInjectable: "some message yo",
 	app: {
 		create: {
-			module: "scripts/App"
+			module: "scripts/App",
+			args: {
+				$ref: "randomInjectable"
+			}
 		},
-		ready: {
-			run: {}
-		}
+		ready: 'run'
 	}
 });
