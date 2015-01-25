@@ -1,0 +1,20 @@
+{
+  "name": "explore-wirejs",
+  "version": "0.0.0",
+  "homepage": "https://github.com/sennett/explore-wirejs",
+  "authors": [
+    "Anthony Sennett <anthony.sennett@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "wire": "~0.10.9",
+    "curl": "~0.8.12"
+  }
+}
