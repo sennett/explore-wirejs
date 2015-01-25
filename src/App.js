@@ -1,8 +1,9 @@
-define(function () {
+define(['box2dweb'], function (box2dweb) {
 	var App = function(moduleA, moduleB, staticData){
 		this.moduleA = moduleA;
 		this.moduleB = moduleB;
 		this.staticData = staticData;
+		console.log('box2dweb: ',box2dweb);
 	};
 
 	App.prototype = {
