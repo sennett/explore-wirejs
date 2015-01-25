@@ -9,6 +9,7 @@ define(function () {
 		run: function(){
 			this.moduleA.doSomethingModuleA();
 			this.moduleA.applyStaticData(this.staticData);
+			this.moduleB.setModuleAAtRuntime(this.moduleA);
 			this.moduleB.pleaseDoSomethingModuleB();
 		}
 	};
