@@ -10,6 +10,6 @@
 		]
 	};
 
-	curl(config, ['wire!scripts/wireSpec']);
+	curl(config, ['wire!src/wireSpec']);
 
 })(curl);
