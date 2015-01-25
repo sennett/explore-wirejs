@@ -1,5 +1,4 @@
 define(['box2dweb'], function (box2dweb) {
-//define(function () {
 	var App = function(moduleA, moduleB, staticData){
 		this.moduleA = moduleA;
 		this.moduleB = moduleB;
@@ -12,6 +11,7 @@ define(['box2dweb'], function (box2dweb) {
 			this.moduleA.applyStaticData(this.staticData);
 			this.moduleB.setModuleAAtRuntime(this.moduleA);
 			this.moduleB.pleaseDoSomethingModuleB();
+			console.log('non amd module: ', box2dweb);
 		}
 	};
 
