@@ -7,5 +7,5 @@
 		'src': '../src'
 	},
 	optimize: "uglify",
-	findNestedDependencies: false
+	findNestedDependencies: true
 })
