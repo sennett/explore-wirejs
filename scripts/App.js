@@ -1,11 +1,11 @@
 define(function () {
-	var App = function(randomInjectable){
-		this.randomInjectable = randomInjectable;
+	var App = function(moduleA){
+		this.moduleA = moduleA;
 	};
 
 	App.prototype = {
 		run: function(){
-			alert(this.randomInjectable);
+			this.moduleA.doSomethingModuleA();
 		}
 	};
 
