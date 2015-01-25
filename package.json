@@ -4,10 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "connect": "~3.3.4",
-    "serve-static": "~1.8.1",
-    "cram": "^0.8.3",
-    "requirejs": "^2.1.15"
+    "requirejs": "^2.1.15",
+    "wire-rjs-builder": "git://github.com/pieterv/wire-rjs-builder"
   },
   "devDependencies": {
     "connect": "^3.3.4",
