@@ -7,3 +7,4 @@ TODO:
 - ~~module B gets passed module A in method (from App)~~
 - ~~shim with curl~~
 - production build (es muy importante)
+ - minify and concat wire lib files
