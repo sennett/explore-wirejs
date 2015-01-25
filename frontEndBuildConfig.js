@@ -6,6 +6,6 @@
 		'wire/builder/rjs': '../node_modules/wire-rjs-builder/builder',
 		'src': '../src'
 	},
-	optimize: "none",
+	optimize: "uglify",
 	findNestedDependencies: false
 })
