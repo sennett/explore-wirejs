@@ -1,9 +1,12 @@
 define({
 	randomInjectable: "some message yo",
+	staticData: {
+		module: 'scripts/staticData'
+	},
 	app: {
 		create: {
 			module: "scripts/App",
-			args: [{ $ref: "moduleA"}, { $ref: "moduleB"} ]
+			args: [{ $ref: "moduleA"}, { $ref: "moduleB"}, {$ref: "staticData"}]
 		},
 		ready: 'run'
 	},
