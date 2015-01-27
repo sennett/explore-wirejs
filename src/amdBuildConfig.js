@@ -1,11 +1,21 @@
 ({
-	mainConfigFile: 'main.js',
-	name: "main",
-	out: "../build/main-built.js",
+	"baseUrl": "./",
+	"dir": "../build",
+
+	mainConfigFile: 'amdBaseConfig.js',
+
 	paths: {
-		'wire/builder/rjs': '../node_modules/wire-rjs-builder/builder',
-		'src': '../src'
+		'wire/builder/rjs': '../node_modules/wire-rjs-builder/builder'
 	},
-	optimize: "uglify",
-	findNestedDependencies: true
+
+	optimize: "none",
+
+	findNestedDependencies: false,
+
+	"modules": [
+		{
+			"name": "exploreWirejs",
+			"include": []
+		}
+	]
 })

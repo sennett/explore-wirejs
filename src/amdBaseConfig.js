@@ -1,5 +1,5 @@
 require.config({
-	baseUrl: ".",
+	baseUrl: "src",
 	packages: [
 		{ name: 'wire', location: '../bower_components/wire', main: 'wire' },
 		{ name: 'when', location: '../bower_components/when', main: 'when' },
@@ -15,5 +15,3 @@ require.config({
 		}
 	}
 });
-
-require(['wire!src/wireSpec']);

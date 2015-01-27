@@ -1,30 +1,30 @@
 define({
 	randomInjectable: "some message yo",
 	staticData: {
-		module: 'src/staticData'
+		module: 'staticData'
 	},
 	app: {
 		create: {
-			module: "src/App",
+			module: "App",
 			args: [{ $ref: "moduleA"}, { $ref: "moduleB"}, {$ref: "staticData"}]
 		},
 		ready: 'run'
 	},
 	moduleA: {
 		create: {
-			module: "src/ModuleA",
+			module: "ModuleA",
 			args: {$ref: "randomInjectable" }
 		}
 	},
 	moduleB: {
 		create: {
-			module: "src/ModuleB",
+			module: "ModuleB",
 			args: [{$ref: "moduleC"}, {$ref: "randomInjectable" }]
 		}
 	},
 	moduleC: {
 		create: {
-			module: "src/ModuleC"
+			module: "ModuleC"
 		}
 	}
 });
