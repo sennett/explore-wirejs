@@ -9,7 +9,7 @@
 	},
 
 	optimize: "none",
-
+	removeCombined: true,
 	findNestedDependencies: false,
 
 	"modules": [
