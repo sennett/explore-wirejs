@@ -14,7 +14,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "build": "rm -f build/main-built.js; node node_modules/.bin/r.js -o src/frontEndBuildConfig.js "
+    "build": "rm -f build/main-built.js; node node_modules/.bin/r.js -o src/amdBuildConfig.js "
   },
   "repository": {
     "type": "git",
