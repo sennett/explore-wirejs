@@ -1,7 +1,7 @@
 ({
-	mainConfigFile: 'src/main.js',
+	mainConfigFile: 'main.js',
 	name: "main",
-	out: "build/main-built.js",
+	out: "../build/main-built.js",
 	paths: {
 		'wire/builder/rjs': '../node_modules/wire-rjs-builder/builder',
 		'src': '../src'
