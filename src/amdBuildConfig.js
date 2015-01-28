@@ -1,6 +1,7 @@
 ({
+	"name": "buildInit",
 	"baseUrl": "./",
-	"dir": "../build",
+	"out": "../build/exploreWirejs.js",
 
 	mainConfigFile: 'amdBaseConfig.js',
 
@@ -9,12 +10,6 @@
 	},
 
 	optimize: "none",
-	removeCombined: true,
+	removeCombined: true
 
-	"modules": [
-		{
-			"name": "buildInit",
-			"deps": ["wire"]
-		}
-	]
 })
