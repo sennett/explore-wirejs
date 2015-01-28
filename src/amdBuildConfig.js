@@ -10,12 +10,13 @@
 
 	optimize: "none",
 	removeCombined: true,
-	findNestedDependencies: false,
+	findNestedDependencies: true,
 
 	"modules": [
 		{
-			"name": "exploreWirejs",
-			"include": []
+			"name": "buildInit",
+			"deps": ["wire"],
+			findNestedDependencies: true
 		}
 	]
 })
