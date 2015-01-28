@@ -10,13 +10,11 @@
 
 	optimize: "none",
 	removeCombined: true,
-	findNestedDependencies: true,
 
 	"modules": [
 		{
 			"name": "buildInit",
-			"deps": ["wire"],
-			findNestedDependencies: true
+			"deps": ["wire"]
 		}
 	]
 })
