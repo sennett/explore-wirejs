@@ -6,7 +6,7 @@ define({
 	app: {
 		create: {
 			module: "App",
-			args: [{ $ref: "moduleA"}, { $ref: "moduleB"}, {$ref: "staticData"}]
+			args: [{ $ref: "moduleA"}, { $ref: "moduleB"}, {$ref: "staticData"},{$ref: "moduleD"},{$ref: "moduleE"},]
 		},
 		ready: 'run'
 	},
@@ -18,7 +18,7 @@ define({
 	},
 	moduleB: {
 		create: {
-			module: "ModuleB",
+			module: "someSubDir/ModuleB",
 			args: [{$ref: "moduleC"}, {$ref: "randomInjectable" }]
 		}
 	},
@@ -26,5 +26,11 @@ define({
 		create: {
 			module: "ModuleC"
 		}
+	},
+	moduleD: {
+		module: "someSubDir/ModuleD"
+	},
+	moduleE: {
+		module: "someSubDir/ModuleE"
 	}
 });
