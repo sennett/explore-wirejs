@@ -8,5 +8,5 @@ TODO:
 - ~~shim with curl~~
 - production build (es muy importante)
  - remove the rest of the crap from the output
- - include other lib files too
- - minify and concat wire lib files
+ - ~~include other lib files too~~
+ - ~~minify and concat wire lib files~~
